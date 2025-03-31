@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "E:\OneDrive - \01_Projekte\Windows tipps\main.py", line 9, in main
+    app = CommandManagerApp()
+  File "E:\OneDrive - \01_Projekte\Windows tipps\app\gui.py", line 44, in __init__
+    self.create_menubar()
+    ~~~~~~~~~~~~~~~~~~~^^
+  File "E:\OneDrive - \01_Projekte\Windows tipps\app\gui.py", line 62, in create_menubar
+    commands_menu.add_command(label="Befehl hinzufügen", command=self.add_command)
+                                                                 ^^^^^^^^^^^^^^^^
+  File "C:\Users\Chaoz\AppData\Local\Programs\Python\Python313\Lib\tkinter\__init__.py", line 2546, in __getattr__
+    return getattr(self.tk, attr)
+AttributeError: '_tkinter.tkapp' object has no attribute 'add_command'

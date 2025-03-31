@@ -1,0 +1,257 @@
+[
+  {
+    "command": "ls",
+    "beschreibung": "Listet Dateien und Verzeichnisse auf.",
+    "optionen": {
+      "-l": "Langformatige Ausgabe",
+      "-a": "Zeigt alle Dateien, inklusive versteckter",
+      "-h": "Lesbare Dateigrößen (nur mit -l sinnvoll)"
+    },
+    "tags": [
+      "dateiverwaltung",
+      "navigation"
+    ]
+  },
+  {
+    "command": "cd",
+    "beschreibung": "Wechselt das aktuelle Verzeichnis.",
+    "optionen": {
+      "..": "Wechselt ein Verzeichnis nach oben",
+      "/": "Wechselt in das Root-Verzeichnis",
+      "~": "Wechselt in das Home-Verzeichnis"
+    },
+    "tags": [
+      "navigation"
+    ]
+  },
+  {
+    "command": "cp",
+    "beschreibung": "Kopiert Dateien und Verzeichnisse.",
+    "optionen": {
+      "-r": "Kopiert Verzeichnisse rekursiv",
+      "-v": "Zeigt kopierte Dateien an",
+      "-u": "Überschreibt nur, wenn Quelle neuer ist"
+    },
+    "tags": [
+      "dateiverwaltung"
+    ]
+  },
+  {
+    "command": "mv",
+    "beschreibung": "Verschiebt oder benennt Dateien und Verzeichnisse um.",
+    "optionen": {
+      "-v": "Zeigt verschobene Dateien an",
+      "-i": "Fragt vor dem Überschreiben",
+      "-n": "Überschreibt keine bestehenden Dateien"
+    },
+    "tags": [
+      "dateiverwaltung"
+    ]
+  },
+  {
+    "command": "rm",
+    "beschreibung": "Löscht Dateien oder Verzeichnisse.",
+    "optionen": {
+      "-r": "Löscht Verzeichnisse rekursiv",
+      "-f": "Ignoriert nicht existierende Dateien, keine Rückfragen",
+      "-v": "Zeigt gelöschte Dateien an"
+    },
+    "tags": [
+      "dateiverwaltung",
+      "sicherheit"
+    ]
+  },
+  {
+    "command": "mkdir",
+    "beschreibung": "Erstellt ein neues Verzeichnis.",
+    "optionen": {
+      "-p": "Erstellt auch übergeordnete Verzeichnisse",
+      "-v": "Zeigt erstellte Verzeichnisse an"
+    },
+    "tags": [
+      "dateiverwaltung"
+    ]
+  },
+  {
+    "command": "chmod",
+    "beschreibung": "Ändert die Zugriffsrechte von Dateien/Verzeichnissen.",
+    "optionen": {
+      "+x": "Fügt Ausführungsrechte hinzu",
+      "755": "Typische Rechte für ausführbare Dateien",
+      "-R": "Wendet Änderung rekursiv an"
+    },
+    "tags": [
+      "rechte",
+      "sicherheit"
+    ]
+  },
+  {
+    "command": "chown",
+    "beschreibung": "Ändert den Besitzer einer Datei/eines Verzeichnisses.",
+    "optionen": {
+      "-R": "Wendet Änderung rekursiv an",
+      "--from": "Ändert Eigentümer nur, wenn aktueller Eigentümer übereinstimmt"
+    },
+    "tags": [
+      "rechte",
+      "sicherheit"
+    ]
+  },
+  {
+    "command": "ps",
+    "beschreibung": "Zeigt laufende Prozesse an.",
+    "optionen": {
+      "aux": "Zeigt alle Prozesse aller Benutzer",
+      "-ef": "Alternative Darstellung aller Prozesse"
+    },
+    "tags": [
+      "prozesse",
+      "überwachung"
+    ]
+  },
+  {
+    "command": "top",
+    "beschreibung": "Zeigt die laufenden Prozesse in Echtzeit.",
+    "optionen": {
+      "-u": "Filtert nach Benutzer",
+      "-p": "Filtert nach Prozess-ID"
+    },
+    "tags": [
+      "prozesse",
+      "überwachung"
+    ]
+  },
+  {
+    "command": "grep",
+    "beschreibung": "Durchsucht Dateien nach einem Muster (Text oder Regex).",
+    "optionen": {
+      "-i": "Ignoriert Groß-/Kleinschreibung",
+      "-r": "Durchsucht rekursiv alle Dateien in Verzeichnissen",
+      "-n": "Zeigt Zeilennummern an"
+    },
+    "tags": ["suche", "textverarbeitung"]
+  },
+  {
+    "command": "find",
+    "beschreibung": "Sucht nach Dateien und Verzeichnissen.",
+    "optionen": {
+      "-name": "Sucht nach Namen",
+      "-type": "Filtert nach Dateityp (f für Dateien, d für Verzeichnisse)",
+      "-exec": "Führt für jedes Ergebnis einen Befehl aus"
+    },
+    "tags": ["suche", "dateiverwaltung"]
+  },
+  {
+    "command": "tar",
+    "beschreibung": "Packt oder entpackt Archive.",
+    "optionen": {
+      "-c": "Erstellt ein Archiv",
+      "-x": "Entpackt ein Archiv",
+      "-v": "Ausgabe von Details",
+      "-z": "Komprimiert oder dekomprimiert mit gzip",
+      "-f": "Gibt Archivname an"
+    },
+    "tags": ["archivierung"]
+  },
+  {
+    "command": "ssh",
+    "beschreibung": "Verbindet sich sicher mit einem Remote-Host.",
+    "optionen": {
+      "-p": "Spezifiziert Portnummer",
+      "-i": "Identitätsdatei (SSH-Key)",
+      "-v": "Zeigt Debug-Ausgabe an"
+    },
+    "tags": ["netzwerk", "fernwartung"]
+  },
+  {
+    "command": "ping",
+    "beschreibung": "Testet die Erreichbarkeit eines Hosts.",
+    "optionen": {
+      "-c": "Setzt Anzahl der Pings fest",
+      "-i": "Setzt Intervall zwischen Pings"
+    },
+    "tags": ["netzwerk", "diagnose"]
+  },
+  {
+    "command": "wget",
+    "beschreibung": "Lädt Dateien aus dem Internet herunter.",
+    "optionen": {
+      "-O": "Gibt Dateinamen an",
+      "-r": "Lädt rekursiv herunter",
+      "--no-check-certificate": "Ignoriert SSL-Zertifikatsprüfung"
+    },
+    "tags": ["netzwerk"]
+  },
+  {
+    "command": "df",
+    "beschreibung": "Zeigt Speicherplatzbelegung der Dateisysteme an.",
+    "optionen": {
+      "-h": "Lesbare Größen",
+      "-T": "Zeigt Dateisystemtyp an"
+    },
+    "tags": ["system", "speicher"]
+  },
+  {
+    "command": "du",
+    "beschreibung": "Zeigt Speicherplatzverbrauch an.",
+    "optionen": {
+      "-h": "Lesbare Größen",
+      "-s": "Zeigt Gesamtsumme an",
+      "-d": "Legt Tiefe der Verzeichnisebene fest"
+    },
+    "tags": ["system", "speicher"]
+  },
+  {
+    "command": "man",
+    "beschreibung": "Zeigt Handbuchseiten für Befehle.",
+    "optionen": {},
+    "tags": ["hilfe", "dokumentation"]
+  },
+  {
+    "command": "nano",
+    "beschreibung": "Einfacher Texteditor im Terminal.",
+    "optionen": {},
+    "tags": ["textverarbeitung"]
+  },
+  {
+    "command": "cat",
+    "beschreibung": "Zeigt den Inhalt von Dateien an.",
+    "optionen": {
+      "-n": "Zeilennummerierung anzeigen"
+    },
+    "tags": ["textverarbeitung"]
+  },
+  {
+    "command": "less",
+    "beschreibung": "Zeigt Dateiinhalt seitenweise an.",
+    "optionen": {},
+    "tags": ["textverarbeitung"]
+  },
+  {
+    "command": "sudo",
+    "beschreibung": "Führt Befehle als Superuser (root) aus.",
+    "optionen": {},
+    "tags": ["rechte", "sicherheit"]
+  },
+  {
+    "command": "apt",
+    "beschreibung": "Verwaltet Softwarepakete (Debian/Ubuntu).",
+    "optionen": {
+      "install": "Installiert Pakete",
+      "update": "Aktualisiert Paketquellen",
+      "upgrade": "Aktualisiert installierte Pakete",
+      "remove": "Entfernt Pakete"
+    },
+    "tags": ["paketverwaltung"]
+  },
+  {
+    "command": "systemctl",
+    "beschreibung": "Steuert Systemdienste (systemd).",
+    "optionen": {
+      "start": "Startet einen Dienst",
+      "stop": "Stoppt einen Dienst",
+      "status": "Zeigt Status eines Dienstes"
+    },
+    "tags": ["system"]
+  }
+]

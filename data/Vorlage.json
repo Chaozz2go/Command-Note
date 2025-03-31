@@ -1,0 +1,26 @@
+[
+  {
+    "command": "ls",
+    "beschreibung": "beschreibung",
+    "optionen": {
+      "-r": "hallo",
+      "-d": "bye",
+      "-w": "hey"
+    },
+    "tags": [
+      "netzwerk",
+      "sicherheit"
+    ]
+  },
+  {
+    "command": "ls2",
+    "beschreibung": "beschriebung2",
+    "optionen": {
+      "-r": "fd",
+      "-e": "2we"
+    },
+    "tags": [
+      "netzwerk"
+    ]
+  }
+]

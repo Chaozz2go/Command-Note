@@ -1,0 +1,55 @@
+{
+  "command": "ls -la",
+  "beschreibung": "Zeigt alle Dateien an.",
+  "optionen": {
+    "-l": "lange Ansicht",
+    "-a": "auch versteckte Dateien"
+  },
+  "tags": ["linux", "verzeichnis"]
+},
+{
+  "command": "ls -la",
+  "beschreibung": "Zeigt alle Dateien an.",
+  "optionen": {
+    "-l": "lange Ansicht",
+    "-a": "auch versteckte Dateien"
+  },
+  "tags": ["linux", "verzeichnis"]
+},
+{
+  "command": "ls -la",
+  "beschreibung": "Zeigt alle Dateien an.",
+  "optionen": {
+    "-l": "lange Ansicht",
+    "-a": "auch versteckte Dateien"
+  },
+  "tags": ["linux", "verzeichnis"]
+},
+{
+  "command": "ls -la",
+  "beschreibung": "Zeigt alle Dateien an.",
+  "optionen": {
+    "-l": "lange Ansicht",
+    "-a": "auch versteckte Dateien"
+  },
+  "tags": ["linux", "verzeichnis"]
+},
+{
+  "command": "ls -la",
+  "beschreibung": "Zeigt alle Dateien an.",
+  "optionen": {
+    "-l": "lange Ansicht",
+    "-a": "auch versteckte Dateien"
+  },
+  "tags": ["linux", "verzeichnis"]
+},
+{
+  "command": "ls -la",
+  "beschreibung": "Zeigt alle Dateien an.",
+  "optionen": {
+    "-l": "lange Ansicht",
+    "-a": "auch versteckte Dateien"
+  },
+  "tags": ["boom", "verzeichnis"]
+}
+

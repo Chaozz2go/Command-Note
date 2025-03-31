@@ -1,1 +1,1 @@
-# Command-Note
+Zum ausführen der Datei muss Python Installiert sein und dann einfach die main.py ausführen

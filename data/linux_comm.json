@@ -1,0 +1,108 @@
+[
+  {
+    "command": "ls -la",
+    "beschreibung": "Listet alle Dateien inklusive versteckter Dateien im langen Format.",
+    "optionen": {
+      "-l": "lange Ausgabe",
+      "-a": "zeige auch versteckte Dateien"
+    },
+    "tags": [
+      "linux",
+      "verzeichnis",
+      "anzeige"
+    ]
+  },
+  {
+    "command": "cd /var/log",
+    "beschreibung": "Wechselt in das Verzeichnis /var/log.",
+    "optionen": {},
+    "tags": [
+      "linux",
+      "navigation"
+    ]
+  },
+  {
+    "command": "pwd",
+    "beschreibung": "Zeigt das aktuelle Verzeichnis an.",
+    "optionen": {},
+    "tags": [
+      "linux",
+      "verzeichnis"
+    ]
+  },
+  {
+    "command": "mkdir test",
+    "beschreibung": "Erstellt ein neues Verzeichnis mit dem Namen 'test'.",
+    "optionen": {},
+    "tags": [
+      "linux",
+      "verzeichnis",
+      "erstellen"
+    ]
+  },
+  {
+    "command": "rm -rf test",
+    "beschreibung": "Löscht das Verzeichnis 'test' rekursiv und ohne Rückfrage.",
+    "optionen": {
+      "-r": "rekursiv löschen",
+      "-f": "ohne Rückfrage"
+    },
+    "tags": [
+      "linux",
+      "verzeichnis",
+      "löschen"
+    ]
+  },
+  {
+    "command": "touch datei.txt",
+    "beschreibung": "Erstellt eine neue, leere Datei namens 'datei.txt'.",
+    "optionen": {},
+    "tags": [
+      "linux",
+      "dateien",
+      "erstellen"
+    ]
+  },
+  {
+    "command": "cat datei.txt",
+    "beschreibung": "Zeigt den Inhalt der Datei 'datei.txt' an.",
+    "optionen": {},
+    "tags": [
+      "linux",
+      "dateien",
+      "anzeige"
+    ]
+  },
+  {
+    "command": "echo 'Hallo Welt' > datei.txt",
+    "beschreibung": "Schreibt 'Hallo Welt' in die Datei 'datei.txt'.",
+    "optionen": {},
+    "tags": [
+      "linux",
+      "dateien",
+      "schreiben"
+    ]
+  },
+  {
+    "command": "grep 'Hallo' datei.txt",
+    "beschreibung": "Durchsucht 'datei.txt' nach dem Begriff 'Hallo'.",
+    "optionen": {},
+    "tags": [
+      "linux",
+      "suche",
+      "dateien"
+    ]
+  },
+  {
+    "command": "chmod +x script.sh",
+    "beschreibung": "Macht die Datei 'script.sh' ausführbar.",
+    "optionen": {
+      "+x": "Ausführungsrechte setzen"
+    },
+    "tags": [
+      "linux",
+      "rechte",
+      "skripte"
+    ]
+  }
+]

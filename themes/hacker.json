@@ -1,0 +1,14 @@
+{
+  "bg": "#222222",
+  "fg": "#00ff00",
+  "button_bg": "#101010",
+  "button_fg": "#00ff00",
+  "entry_bg": "#000000",
+  "entry_fg": "#00ff00",
+  "listbox_bg": "#000000",
+  "listbox_fg": "#00ff00",
+  "text_bg": "#000000",
+  "text_fg": "#00ff00",
+  "scrollbar_trough": "#111111",
+  "scrollbar_bg": "#00ff00"
+}

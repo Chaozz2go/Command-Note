@@ -1,0 +1,1480 @@
+[
+  {
+    "command": "ls",
+    "beschreibung": "Listet Dateien und Verzeichnisse auf.",
+    "optionen": {
+      "-l": "Verwendet ein langes Listenformat.",
+      "-a": "Zeigt auch versteckte Dateien.",
+      "-h": "Größen in menschenlesbarem Format anzeigen."
+    },
+    "tags": [
+      "dateisystem",
+      "navigation"
+    ]
+  },
+  {
+    "command": "cd",
+    "beschreibung": "Wechselt das aktuelle Verzeichnis.",
+    "optionen": {
+      "..": "Wechselt ins übergeordnete Verzeichnis.",
+      "~": "Wechselt ins Home-Verzeichnis.",
+      "-": "Wechselt ins vorherige Verzeichnis."
+    },
+    "tags": [
+      "dateisystem",
+      "navigation"
+    ]
+  },
+  {
+    "command": "pwd",
+    "beschreibung": "Gibt das aktuelle Arbeitsverzeichnis aus.",
+    "optionen": {},
+    "tags": [
+      "dateisystem",
+      "navigation"
+    ]
+  },
+  {
+    "command": "cp",
+    "beschreibung": "Kopiert Dateien und Verzeichnisse.",
+    "optionen": {
+      "-r": "Kopiert Verzeichnisse rekursiv.",
+      "-i": "Fragt vor dem Überschreiben.",
+      "-v": "Zeigt Fortschritt der Kopiervorgänge an."
+    },
+    "tags": [
+      "dateisystem",
+      "backup"
+    ]
+  },
+  {
+    "command": "mv",
+    "beschreibung": "Verschiebt oder benennt Dateien/Verzeichnisse.",
+    "optionen": {
+      "-i": "Fragt vor dem Überschreiben.",
+      "-v": "Zeigt Fortschritt an."
+    },
+    "tags": [
+      "dateisystem",
+      "organisation"
+    ]
+  },
+  {
+    "command": "rm",
+    "beschreibung": "Löscht Dateien oder Verzeichnisse.",
+    "optionen": {
+      "-r": "Löscht Verzeichnisse rekursiv.",
+      "-f": "Erzwingt das Löschen ohne Nachfrage.",
+      "-i": "Fragt vor dem Löschen."
+    },
+    "tags": [
+      "dateisystem",
+      "bereinigung"
+    ]
+  },
+  {
+    "command": "mkdir",
+    "beschreibung": "Erstellt ein neues Verzeichnis.",
+    "optionen": {
+      "-p": "Erstellt verschachtelte Verzeichnisse bei Bedarf.",
+      "-v": "Zeigt Informationen über die Erstellung an."
+    },
+    "tags": [
+      "dateisystem"
+    ]
+  },
+  {
+    "command": "rmdir",
+    "beschreibung": "Löscht leere Verzeichnisse.",
+    "optionen": {
+      "--ignore-fail-on-non-empty": "Ignoriert Fehler, wenn das Verzeichnis nicht leer ist.",
+      "-p": "Löscht auch leere übergeordnete Verzeichnisse."
+    },
+    "tags": [
+      "dateisystem"
+    ]
+  },
+  {
+    "command": "touch",
+    "beschreibung": "Erstellt leere Dateien oder aktualisiert Zeitstempel.",
+    "optionen": {
+      "-c": "Erstellt keine Datei, wenn sie nicht existiert.",
+      "-t": "Setzt einen bestimmten Zeitstempel."
+    },
+    "tags": [
+      "dateisystem"
+    ]
+  },
+  {
+    "command": "cat",
+    "beschreibung": "Gibt den Inhalt von Dateien aus.",
+    "optionen": {
+      "-n": "Zeigt Zeilennummern.",
+      "-b": "Nummeriert nur nicht-leere Zeilen."
+    },
+    "tags": [
+      "text",
+      "anzeige"
+    ]
+  },
+  {
+    "command": "echo",
+    "beschreibung": "Beschreibung für echo.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "man",
+    "beschreibung": "Beschreibung für man.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "less",
+    "beschreibung": "Beschreibung für less.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "more",
+    "beschreibung": "Beschreibung für more.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "head",
+    "beschreibung": "Beschreibung für head.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "tail",
+    "beschreibung": "Beschreibung für tail.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "find",
+    "beschreibung": "Beschreibung für find.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "grep",
+    "beschreibung": "Beschreibung für grep.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "chmod",
+    "beschreibung": "Beschreibung für chmod.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "chown",
+    "beschreibung": "Beschreibung für chown.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "df",
+    "beschreibung": "Beschreibung für df.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "du",
+    "beschreibung": "Beschreibung für du.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "top",
+    "beschreibung": "Beschreibung für top.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "htop",
+    "beschreibung": "Beschreibung für htop.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "ps",
+    "beschreibung": "Beschreibung für ps.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "kill",
+    "beschreibung": "Beschreibung für kill.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "killall",
+    "beschreibung": "Beschreibung für killall.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "xargs",
+    "beschreibung": "Beschreibung für xargs.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "tar",
+    "beschreibung": "Beschreibung für tar.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "gzip",
+    "beschreibung": "Beschreibung für gzip.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "gunzip",
+    "beschreibung": "Beschreibung für gunzip.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "zip",
+    "beschreibung": "Beschreibung für zip.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "unzip",
+    "beschreibung": "Beschreibung für unzip.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "wget",
+    "beschreibung": "Beschreibung für wget.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "curl",
+    "beschreibung": "Beschreibung für curl.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "scp",
+    "beschreibung": "Beschreibung für scp.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "rsync",
+    "beschreibung": "Beschreibung für rsync.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "ping",
+    "beschreibung": "Beschreibung für ping.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "traceroute",
+    "beschreibung": "Beschreibung für traceroute.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "netstat",
+    "beschreibung": "Beschreibung für netstat.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "ss",
+    "beschreibung": "Beschreibung für ss.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "ip",
+    "beschreibung": "Beschreibung für ip.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "ifconfig",
+    "beschreibung": "Beschreibung für ifconfig.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "hostname",
+    "beschreibung": "Beschreibung für hostname.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "uptime",
+    "beschreibung": "Beschreibung für uptime.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "whoami",
+    "beschreibung": "Beschreibung für whoami.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "users",
+    "beschreibung": "Beschreibung für users.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "groups",
+    "beschreibung": "Beschreibung für groups.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "uname",
+    "beschreibung": "Beschreibung für uname.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "free",
+    "beschreibung": "Beschreibung für free.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "vmstat",
+    "beschreibung": "Beschreibung für vmstat.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "iostat",
+    "beschreibung": "Beschreibung für iostat.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "mount",
+    "beschreibung": "Beschreibung für mount.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "umount",
+    "beschreibung": "Beschreibung für umount.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "ln",
+    "beschreibung": "Beschreibung für ln.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "stat",
+    "beschreibung": "Beschreibung für stat.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "file",
+    "beschreibung": "Beschreibung für file.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "env",
+    "beschreibung": "Beschreibung für env.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "export",
+    "beschreibung": "Beschreibung für export.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "alias",
+    "beschreibung": "Beschreibung für alias.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "unalias",
+    "beschreibung": "Beschreibung für unalias.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "history",
+    "beschreibung": "Beschreibung für history.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "cron",
+    "beschreibung": "Beschreibung für cron.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "crontab",
+    "beschreibung": "Beschreibung für crontab.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "systemctl",
+    "beschreibung": "Beschreibung für systemctl.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "service",
+    "beschreibung": "Beschreibung für service.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "journalctl",
+    "beschreibung": "Beschreibung für journalctl.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "dmesg",
+    "beschreibung": "Beschreibung für dmesg.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "lsblk",
+    "beschreibung": "Beschreibung für lsblk.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "blkid",
+    "beschreibung": "Beschreibung für blkid.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "fdisk",
+    "beschreibung": "Beschreibung für fdisk.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "parted",
+    "beschreibung": "Beschreibung für parted.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "mkfs",
+    "beschreibung": "Beschreibung für mkfs.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "fsck",
+    "beschreibung": "Beschreibung für fsck.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "passwd",
+    "beschreibung": "Beschreibung für passwd.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "adduser",
+    "beschreibung": "Beschreibung für adduser.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "useradd",
+    "beschreibung": "Beschreibung für useradd.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "usermod",
+    "beschreibung": "Beschreibung für usermod.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "userdel",
+    "beschreibung": "Beschreibung für userdel.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "groupadd",
+    "beschreibung": "Beschreibung für groupadd.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "groupdel",
+    "beschreibung": "Beschreibung für groupdel.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "groupmod",
+    "beschreibung": "Beschreibung für groupmod.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "su",
+    "beschreibung": "Beschreibung für su.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "sudo",
+    "beschreibung": "Beschreibung für sudo.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "login",
+    "beschreibung": "Beschreibung für login.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "logout",
+    "beschreibung": "Beschreibung für logout.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "shutdown",
+    "beschreibung": "Beschreibung für shutdown.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "reboot",
+    "beschreibung": "Beschreibung für reboot.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "init",
+    "beschreibung": "Beschreibung für init.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "runlevel",
+    "beschreibung": "Beschreibung für runlevel.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "uptime",
+    "beschreibung": "Beschreibung für uptime.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "date",
+    "beschreibung": "Beschreibung für date.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "cal",
+    "beschreibung": "Beschreibung für cal.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "bc",
+    "beschreibung": "Beschreibung für bc.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "seq",
+    "beschreibung": "Beschreibung für seq.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "yes",
+    "beschreibung": "Beschreibung für yes.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "time",
+    "beschreibung": "Beschreibung für time.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "watch",
+    "beschreibung": "Beschreibung für watch.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "sleep",
+    "beschreibung": "Beschreibung für sleep.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "clear",
+    "beschreibung": "Beschreibung für clear.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "tput",
+    "beschreibung": "Beschreibung für tput.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "locate",
+    "beschreibung": "Beschreibung für locate.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "updatedb",
+    "beschreibung": "Beschreibung für updatedb.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "cut",
+    "beschreibung": "Beschreibung für cut.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "sort",
+    "beschreibung": "Beschreibung für sort.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "uniq",
+    "beschreibung": "Beschreibung für uniq.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "tee",
+    "beschreibung": "Beschreibung für tee.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "diff",
+    "beschreibung": "Beschreibung für diff.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "cmp",
+    "beschreibung": "Beschreibung für cmp.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "comm",
+    "beschreibung": "Beschreibung für comm.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "awk",
+    "beschreibung": "Beschreibung für awk.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "sed",
+    "beschreibung": "Beschreibung für sed.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "tr",
+    "beschreibung": "Beschreibung für tr.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "basename",
+    "beschreibung": "Beschreibung für basename.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "dirname",
+    "beschreibung": "Beschreibung für dirname.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "readlink",
+    "beschreibung": "Beschreibung für readlink.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "realpath",
+    "beschreibung": "Beschreibung für realpath.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "expr",
+    "beschreibung": "Beschreibung für expr.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "test",
+    "beschreibung": "Beschreibung für test.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "[",
+    "beschreibung": "Beschreibung für [.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "printf",
+    "beschreibung": "Beschreibung für printf.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "read",
+    "beschreibung": "Beschreibung für read.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "source",
+    "beschreibung": "Beschreibung für source.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": ".",
+    "beschreibung": "Beschreibung für ..",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "exec",
+    "beschreibung": "Beschreibung für exec.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "trap",
+    "beschreibung": "Beschreibung für trap.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "wait",
+    "beschreibung": "Beschreibung für wait.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "jobs",
+    "beschreibung": "Beschreibung für jobs.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "bg",
+    "beschreibung": "Beschreibung für bg.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "fg",
+    "beschreibung": "Beschreibung für fg.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "disown",
+    "beschreibung": "Beschreibung für disown.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "screen",
+    "beschreibung": "Beschreibung für screen.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "tmux",
+    "beschreibung": "Beschreibung für tmux.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "nohup",
+    "beschreibung": "Beschreibung für nohup.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "strace",
+    "beschreibung": "Beschreibung für strace.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "lsof",
+    "beschreibung": "Beschreibung für lsof.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "nc",
+    "beschreibung": "Beschreibung für nc.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "nmap",
+    "beschreibung": "Beschreibung für nmap.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "iptables",
+    "beschreibung": "Beschreibung für iptables.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "firewalld",
+    "beschreibung": "Beschreibung für firewalld.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "ufw",
+    "beschreibung": "Beschreibung für ufw.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "tcpdump",
+    "beschreibung": "Beschreibung für tcpdump.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "dig",
+    "beschreibung": "Beschreibung für dig.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "nslookup",
+    "beschreibung": "Beschreibung für nslookup.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "host",
+    "beschreibung": "Beschreibung für host.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "whois",
+    "beschreibung": "Beschreibung für whois.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "mail",
+    "beschreibung": "Beschreibung für mail.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "mailx",
+    "beschreibung": "Beschreibung für mailx.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "mut",
+    "beschreibung": "Beschreibung für mut.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "vim",
+    "beschreibung": "Beschreibung für vim.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "nano",
+    "beschreibung": "Beschreibung für nano.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "emacs",
+    "beschreibung": "Beschreibung für emacs.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "vi",
+    "beschreibung": "Beschreibung für vi.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "apt",
+    "beschreibung": "Beschreibung für apt.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "apt-get",
+    "beschreibung": "Beschreibung für apt-get.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "yum",
+    "beschreibung": "Beschreibung für yum.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "dnf",
+    "beschreibung": "Beschreibung für dnf.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "zypper",
+    "beschreibung": "Beschreibung für zypper.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "pacman",
+    "beschreibung": "Beschreibung für pacman.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "snap",
+    "beschreibung": "Beschreibung für snap.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "flatpak",
+    "beschreibung": "Beschreibung für flatpak.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "make",
+    "beschreibung": "Beschreibung für make.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "gcc",
+    "beschreibung": "Beschreibung für gcc.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "g++",
+    "beschreibung": "Beschreibung für g++.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "ld",
+    "beschreibung": "Beschreibung für ld.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "ldd",
+    "beschreibung": "Beschreibung für ldd.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "nm",
+    "beschreibung": "Beschreibung für nm.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "objdump",
+    "beschreibung": "Beschreibung für objdump.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "strings",
+    "beschreibung": "Beschreibung für strings.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "file",
+    "beschreibung": "Beschreibung für file.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "ldconfig",
+    "beschreibung": "Beschreibung für ldconfig.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "pkg-config",
+    "beschreibung": "Beschreibung für pkg-config.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "python3",
+    "beschreibung": "Beschreibung für python3.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "perl",
+    "beschreibung": "Beschreibung für perl.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "ruby",
+    "beschreibung": "Beschreibung für ruby.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "node",
+    "beschreibung": "Beschreibung für node.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "npm",
+    "beschreibung": "Beschreibung für npm.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "java",
+    "beschreibung": "Beschreibung für java.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "javac",
+    "beschreibung": "Beschreibung für javac.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  },
+  {
+    "command": "mvn",
+    "beschreibung": "Beschreibung für mvn.",
+    "optionen": {},
+    "tags": [
+      "system"
+    ]
+  }
+]
